@@ -1,0 +1,42 @@
+{
+  "name": "nanobot-node",
+  "version": "0.1.0",
+  "description": "Ultra-Lightweight Personal AI Assistant (Node.js Version)",
+  "main": "dist/index.js",
+  "bin": {
+    "nanobot-node": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "agent": "ts-node src/cli/index.ts agent",
+    "gateway": "ts-node src/cli/index.ts gateway",
+    "onboard": "ts-node src/cli/index.ts onboard",
+    "status": "ts-node src/cli/index.ts status",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "nanobot",
+    "agent",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "winston": "^3.11.0",
+    "openai": "^4.28.0",
+    "cron": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/cron": "^2.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}

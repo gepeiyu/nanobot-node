@@ -1,11 +1,17 @@
 # nanobot-node
-
-Ultra-Lightweight Personal AI Assistant (Node.js Version)
+Ultra-Lightweight Personal AI Assistant (Node.js Version) - Part of the nanobot ecosystem, inspired by OpenClaw
 
 ## 📋 项目简介
+nanobot-node 是参考 HKUDS 开发的 nanobot 项目的 TypeScript/Node.js 开源实现，作为一个轻量级的个人 AI 助手，基于 TypeScript 开发，兼容多种 LLM 提供商，包括 OpenAI 和 DeepSeek。它与 Python 版本的 nanobot 共享相同的核心概念和目标，但专注于提供更轻量、更快速的 Node.js 实现。
 
-nanobot-node 是一个轻量级的个人 AI 助手，基于 TypeScript 开发，兼容多种 LLM 提供商，包括 OpenAI 和 DeepSeek。它具有以下特点：
+### 与 nanobot 的关系
+- **nanobot**：由 HKUDS 开发的 Python 版本完整 AI 助手，功能丰富，支持更多插件和集成，项目地址：[https://github.com/HKUDS/nanobot](https://github.com/HKUDS/nanobot)
+- **nanobot-node**：TypeScript/Node.js 轻量级版本，专注于核心功能和性能
 
+### 与 OpenClaw 的关系
+nanobot 生态系统的技能系统灵感来源于 [OpenClaw](https://github.com/openclaw/openclaw) 项目，OpenClaw 提供了一个灵活、可扩展的技能系统框架，为 AI 助手提供了丰富的功能扩展能力。
+
+nanobot-node具有以下特点：
 - 🪶 **轻量级**：核心代码简洁，易于理解和扩展
 - 🔧 **功能丰富**：支持文件操作、Shell 命令执行、Web 搜索等多种工具
 - 🔄 **多提供商支持**：支持 OpenAI 和 DeepSeek API
@@ -166,6 +172,11 @@ nanobot-node/
 - **配置管理**：dotenv + JSON
 - **LLM 集成**：openai
 - **定时任务**：cron
+
+### 生态系统集成
+
+- **nanobot 生态**：与 Python 版本 nanobot 共享核心概念
+- **OpenClaw 灵感**：借鉴 OpenClaw 的技能系统设计理念
 
 ## 🎯 支持的 LLM 模型
 
